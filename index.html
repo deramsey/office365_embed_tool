@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Office 365 Embedding Tool</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Office 365 Embedding Tool</h1>
+
+    <textarea id="LinkInput" ></textarea>
+  <label ><input id="gdrive" type="radio"  name="res" value="true"><span>PDF on Google Drive</span></label>
+    <section class="resButtons">
+    <label ><input type="radio"  name="res" value="width='100%' height='730px'"><span>Responsive Width</span></label>
+
+    <label><input type="radio" name="res" value="width='640px' height='370px'"><span>640px x 360px WS</span></label>
+
+    <label><input type="radio" name="res" value="width='800px' height='460px'"><span>800px x 450px WS</span></label>
+
+    <label><input type="radio" name="res" value="width='640px' height='490px'"><span>640px x 480px FS</span></label>
+
+    <label><input type="radio" name="res" value="width='800px' height='610px'"><span>800px x 600px FS</span></label>
+
+    </section>
+
+    <button id="click" onclick="getLink()">GO!</button>
+    <button id="clear">Clear</button>
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
